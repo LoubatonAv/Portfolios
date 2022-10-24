@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './cmps/Header';
+import ProjectList from './cmps/ProjectList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='grid h-screen place-items-center grid-cols-4'>
+      <div className='flex flex-col col-start-2 col-span-2'>
+        <Header />
+        <ProjectList />
+      </div>
     </div>
   );
 }
